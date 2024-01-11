@@ -16,11 +16,6 @@ public class MovieService {
     private Environment env;
 
     public List<Movie> getAllMovies() {
-        System.out.println(env);
-        String path1 = env.getProperty("sprint.data.mongodb.uri");
-        System.out.println(path1);
-        String path2 = env.getProperty("spring.data.mongodb.database");
-        System.out.println(path2);
         return movieRepository.findAll();
     }
 }

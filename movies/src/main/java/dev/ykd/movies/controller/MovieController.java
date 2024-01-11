@@ -16,6 +16,7 @@ import java.util.List;
 public class MovieController {
     @Autowired
     private MovieService movieService;
+
     @GetMapping
     public ResponseEntity<List<Movie>> getAllMovies() {
         return new ResponseEntity<List<Movie>>(movieService.getAllMovies(), HttpStatus.OK);
