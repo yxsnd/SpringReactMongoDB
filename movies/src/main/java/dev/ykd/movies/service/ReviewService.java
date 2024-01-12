@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ReviewService {
 
-    private static Logger logger = LogManager.getLogger(ReviewService.class);
+    private static final Logger logger = LogManager.getLogger(ReviewService.class);
     @Autowired
     private ReviewRepository reviewRepository;
 
