@@ -21,23 +21,16 @@ public class MovieService {
     private static Logger logger = LogManager.getLogger(MovieService.class);
 
     public List<Movie> getAllMovies() {
-        try {
-            logger.info("All movies");
-            return movieRepository.findAll();
-        } catch (Exception e) {
-            logger.error(e);
-        }
-        return null;
+
+        logger.info("All movies");
+        return movieRepository.findAll();
+
     }
 
     public Optional<Movie> findMovieByImdbId(String imdbId) {
-        try {
-            logger.info("Found Movie: " + imdbId);
-            return movieRepository.findMovieByImdbId(imdbId);
-        } catch (Exception e) {
-            logger.error(e);
-        }
-        return null;
+        logger.info("Found Movie: " + imdbId);
+        return movieRepository.findMovieByImdbId(imdbId);
+
     }
 }
 
