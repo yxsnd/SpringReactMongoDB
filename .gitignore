@@ -56,5 +56,6 @@ yarn-error.log*
 
 
 ### ENV file ###
-.env
+/movies/src/main/resources/.env
+.idea
 compass-connections.json
